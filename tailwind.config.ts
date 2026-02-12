@@ -1,3 +1,4 @@
+import { Lusitana } from 'next/font/google';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -26,6 +27,9 @@ const config: Config = {
         },
       },
     },
+    fontFamily : {
+      lusitana : ["var(--font-lusitana)"]
+    }
   },
   plugins: [require('@tailwindcss/forms')],
 };
